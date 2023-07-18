@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto";
+}
+header {
+  background-color: #eac926;
+  padding: 1rem;
+}
+
+.tarjetaOEfectivo {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+}
+
+ul.lista-left,
+ul.lista-right {
+  list-style-type: none;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.burger-menu {
+  display: block;
+  padding: 15px 0;
+  border-radius: 20%;
+  background-color: #1259c3;
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+  max-width: 45px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.abajo {
+  display: none;
+}
+
+.abajo a {
+  text-decoration: none;
+  color: #222222;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  .arriba {
+    display: flex;
+    justify-content: space-between;
+  }
+  .abajo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .tarjetaOEfectivo {
+    max-width: 350px;
+    text-align: right;
+  }
+  .abajo ul {
+    display: flex;
+  }
+  .abajo li {
+    margin: 0 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  .arriba,
+  .abajo {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .arriba {
+    margin-top: 25px;
+    align-items: center;
+  }
+
+  .arriba li {
+    margin: 0 10px;
+  }
+  .arriba a {
+    font-size: 19px;
+  }
+  .tarjetaOEfectivo {
+    max-width: none;
+    margin: 0;
+  }  
+}
+
+.mainHome,
+.mainRegister,
+.mainLogin {
+  background-color: #ebebeb;
+  position: relative;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.promocion {
+  width: 100%;
+}
+
+.titulos {
+  color: rgb(33, 32, 32);
+  margin-left: 65px;
+  font-size: 24px;
+}
+
+.clasePadre {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 15px;
+}
+
+.contenedor-articulo {
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  
+}
+.renglon{
+  position: relative;
+  
+}
+.descuento {
+  color: green;
+  font-size: 16px;
+}
+
+.precios {
+  font-weight: bolder;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.descripcion {
+  font-size: 16px;
+}
+
+.autito {
+  border-radius: 2px;
+  border-color: #3d6615;
+}
+
+.div {
+  width: 200px;
+  height: 290px;
+  padding: 20px;
+  margin: 15px;
+  gap: 10px;
+  background-color: white;
+  background: white;
+  text-align: left;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.div p {
+  display: none;
+}
+
+.div:hover p {
+  display: block;
+}
+
+.div:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.div i.fa-truck {
+  transition: transform 0.3s ease;
+}
+
+.div:hover i.fa-truck {
+  transform: rotate(-90deg);
+}
+
+.footer {
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  padding-top: 25px;
+}
+
+#footerPaga, #footerEnvio, #footerSeguridad{
+  text-align: center;
+  font-size: 12px;
+  width: 300px;
+  height: 100px;
+}
+
+.copi {
+  text-align: left;
+  text-align: end;
+}
+
+.footer i {
+  background-color: white;
+  color:#03264C;
+  font-size: 2em;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #eac926; 
+}
+.titulo{
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#nombre, #username, #fecha, #domicilio, 
+#perfil, #contraseña, #confirmar-contraseña{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#enviar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1d7bda;;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#borrar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(255, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#enviar:hover{
+  background-color: #0022AA;
+}
