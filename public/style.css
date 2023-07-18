@@ -11,6 +11,15 @@ header {
   padding: 1rem;
 }
 
+.logo{
+max-width: 100px;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+.buscar{
+  margin-bottom: 10px;
+}
+
 .tarjetaOEfectivo {
   font-weight: 400;
   text-align: center;
@@ -53,7 +62,7 @@ main {
   font-size: 15px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 361px){
   .arriba {
     display: flex;
     justify-content: space-between;
@@ -63,6 +72,9 @@ main {
     justify-content: space-between;
     margin-top: 7px;
   }
+  .logo{
+    max-width: 150px;
+    }
   .burger-menu {
     display: none;
   }
@@ -76,10 +88,20 @@ main {
   .abajo li {
     margin: 0 9px;
   }
+  .compra-cuotas{
+    max-width: 150px;
+    font-size: medium;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
+  .logo{
+    max-width: none;
+    }
   
+  .burger-menu {
+    display: none;
+  }
   .arriba,
   .abajo {
     max-width: 1200px;
@@ -102,6 +124,13 @@ main {
     max-width: none;
     margin: 0;
   }  
+  .compra-cuotas{
+    min-width: 250px;
+    max-width: 400px;
+    font-size: large;
+  }
+
+
 }
 
 .mainHome,
@@ -155,17 +184,19 @@ main {
 }
 
 .descripcion {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
   font-size: 16px;
 }
 
 .autito {
-  border-radius: 2px;
-  border-color: #3d6615;
+  color: #39b54a;  
 }
 
 .div {
   width: 200px;
-  height: 290px;
+  height: 305px;
   padding: 20px;
   margin: 15px;
   gap: 10px;
@@ -220,8 +251,11 @@ main {
 }
 
 .copi {
-  text-align: left;
-  text-align: end;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .footer i {
